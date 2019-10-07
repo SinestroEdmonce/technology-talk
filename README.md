@@ -4,8 +4,7 @@
 
 原文地址：https://github.com/aalansehaiyang/technology-talk
 
-`版权所有，转发请注明来源。答疑解惑及商务合作，请发邮件到 aalansehaiyang52@126.com`
-
+##### 新申请了一个微信公众号----微观技术，沉淀一些技术心得，文章最后有二维码，欢迎大家关注，共同探讨技术！！
 
 ### 前言
 
@@ -181,19 +180,18 @@
 *   [github上fork项目后，如何同步更新后面提交](http://blog.csdn.net/qq1332479771/article/details/56087333)
 * 	[其它](other/other.md)
 
-### 写在后面
+### 写在最后
 
-**不知不觉，这个项目已经更新两年多了。如果喜欢请点击右上角 star 收藏；如果因为读里面的文章，开阔了视野，提升了技术能力并升职加薪，也欢迎打赏表扬，你的赞赏会激励作者一直更新下去，谢谢支持！**
+**收到一些热衷于技术的同学反馈，考虑github实时通知不是特别好，以后时间里，一些技术经验总结、心得体会，会不定期同步一份到微信公众号上，欢迎关注，多多交流，共同进步**
 
+![image](basic-knowledge/img/qrcode_for_gh_4461eb8b8689_258.jpg)
+
+**不知不觉，这个项目已经更新三年多了。如果喜欢请点击右上角 star 收藏；如果因为读里面的文章，开阔了视野，提升了技术能力并升职加薪，也欢迎打赏表扬，你的赞赏会激励作者一直更新下去，谢谢支持！**
 
 
 ![image](basic-knowledge/img/27.png)
 
 
-### 联系作者
+`版权所有，转发请注明来源。答疑解惑及商务合作，请发邮件到 aalansehaiyang52@126.com`
 
-Email：aalansehaiyang52@126.com
 
-### Lisence
-
-Lisenced under [Apache 2.0 lisence](http://opensource.org/licenses/Apache-2.0)

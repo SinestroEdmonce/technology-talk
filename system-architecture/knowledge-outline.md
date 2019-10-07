@@ -5,15 +5,15 @@
 
 ### 系统架构
 
-* 前端浏览器地址的一个 http 请求到后端整个流程
-* 常用的设计模式，23种
+* 前端浏览器地址的一个 http 请求到后端整个流程 [link](outline/1.md)
 * 哪些设计模式可以增加系统的可扩展性
 * 如果AB两个系统互相依赖，如何解除依赖？
 * 什么场景应该拆分系统，什么场景应该合并系统？
-* 常用的设计模式 [link](https://github.com/aalansehaiyang/technology-talk/blob/master/basic-knowledge/%E5%B8%B8%E7%94%A8%E7%9A%84%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F.md)
+* 常用的设计模式，23种  [link](https://github.com/aalansehaiyang/technology-talk/blob/master/basic-knowledge/%E5%B8%B8%E7%94%A8%E7%9A%84%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F.md)
 * 如何构建高可用系统？ [link](https://mp.weixin.qq.com/s/TuOMlzXRtDJSCgYGMPbpjw)
 * 性能优化：使用单例、使用Future模式、使用线程池、选择就绪、减少上下文切换、减少锁粒度、数据压缩、结果缓存
-* Nginx负载均衡
+* Nginx负载均衡 [link](https://github.com/aalansehaiyang/technology-talk/blob/master/web/load-balance.md)
+* 一个系统如何优雅关闭。signal信号捕捉 [link](https://github.com/aalansehaiyang/technology-talk/blob/master/basic-knowledge/java.md)
 
 
 
@@ -28,6 +28,7 @@
 	* 设计缓存要注意什么
 	* 本地缓存用过哪些框架？Guava
 	* 分布式缓存：缓存一致性、缓存命中率、缓存冗余
+	* 缓存和数据库，如何实现一致性？[link](https://mp.weixin.qq.com/s/-Kvj8TPVvZE-rbtult_ozA?from=groupmessage&isappinstalled=0)
 * 分布式数据库
 	* 怎样打造一个分布式数据库？什么时候需要分布式数据库、mycat、otter、HBase
 * 网关框架了解过哪些？能为后端服务带来哪些好处？
@@ -50,12 +51,12 @@
 ### 锁相关
 
 * 死锁定义；如何避免死锁 [link](https://blog.csdn.net/ls5718/article/details/51896159)
-* synchronized和 ReentrantLock 的区别？
-* java读写锁，读写锁设计主要解决什么问题？
-* 乐观锁，悲观锁，使用场景？
-* 设计一个分布式锁
+* 乐观锁，悲观锁，使用场景？ [link](https://github.com/aalansehaiyang/technology-talk/blob/master/system-architecture/%E9%94%81%E6%9C%BA%E5%88%B6.md)
+* 设计一个分布式锁 [link](https://github.com/aalansehaiyang/technology-talk/blob/master/system-architecture/architecture-experience.md)
 * 常见的锁有哪些？ [link](https://github.com/aalansehaiyang/Lock-Learning)
-* 不用synchronized和lock，实现线程安全的单例模式？[link](https://blog.csdn.net/w372426096/article/details/80938895)
+* java读写锁，读写锁设计主要解决什么问题？ [link](http://ifeve.com/read-write-locks/)
+* synchronized和 ReentrantLock 的区别？ [link](https://www.cnblogs.com/fanguangdexiaoyuer/p/5313653.html) [link](outline/2.md)
+* 不用synchronized和lock，实现线程安全的单例模式？[link](https://blog.csdn.net/w372426096/article/details/80938895) 
 
 
 
@@ -76,21 +77,22 @@
 		* Concurrenthashmap 是怎么做到线程安全的？
 	* 线程
 		* 线程有哪些状态？ blocked 和 wait 有什么区别? [link](https://blog.csdn.net/longly_me/article/details/61414268) [link](https://www.cnblogs.com/lcplcpjava/p/6896904.html)
+		* sleep() 和 wait() 的区别 [link](https://blog.csdn.net/xyh269/article/details/52613507)
 		* JDK 中有哪几个线程池？拒绝策略？ [link](https://github.com/aalansehaiyang/technology-talk/blob/master/basic-knowledge/concurrent-class.md) [link](https://mp.weixin.qq.com/s/5dexEENTqJWXN_17c6Lz6A)
 		* 如何保证线程安全问题？
 		* JUC 常用的类 [link](https://github.com/aalansehaiyang/technology-talk/blob/master/basic-knowledge/concurrent-class.md) [link](https://mp.weixin.qq.com/s/K8y6wMNDLwsmU7EFRx7Dsw)
 	* IO
-		* bio、nio和aio的区别、三种IO的用法与原理
+		* BIO、NIO和AIO的区别，三种IO的用法与原理
 	* JVM
-		* JVM如何加载字节码文件
+		* JVM 内存结构 [link](https://github.com/aalansehaiyang/technology-talk/blob/master/basic-knowledge/java.md)
+		* JVM如何加载字节码文件 
 		* 双亲委派，Bootstrap ClassLoader、Extension ClassLoader、ApplicationClassLoader
 		* 内存分配策略、垃圾收集器（G1）、GC算法、GC参数、对象存活的判定 
 		* 什么情况会出现young GC，什么情况会出现Full GC
 		* 怎样判断Full GC是否正常？ [link](https://mp.weixin.qq.com/s/TuOMlzXRtDJSCgYGMPbpjw)
-		* 内存泄露原因？如何排查？
-		* OOM 出现的有哪些场景？
-		* JVM 内存结构
-		* 熟悉哪些jvm 命令，jstack、jmap、jstat?
+		* 内存泄露原因？如何排查？ [link](https://github.com/aalansehaiyang/technology-talk/blob/master/ops/online-question.md)
+		* OOM 出现的有哪些场景？ [link](https://mp.weixin.qq.com/s/34GVlaYDOdY1OQ9eZs-iXg) [link](outline/3.md)
+		* 熟悉哪些jvm 命令，jstack、jmap、jstat? [link](https://blog.csdn.net/itomge/article/details/9904555)
 		* jvm调优经验
 	* 其它
 		* 动态代理与Cglib实现的区别 [link](https://www.cnblogs.com/leifei/p/8263448.html)
@@ -115,17 +117,18 @@
 	
 
 * mysql
+	* 数据库主备搭建 [link](https://www.cnblogs.com/fan-yuan/p/7249249.html) [link](https://blog.csdn.net/zimu002/article/details/72843260)
 	* 表级锁和行级锁对比 [link](https://mp.weixin.qq.com/s/ENQZii1xgxlsIbR-oMseKw)
 	* 事务特性，有哪几种事务隔离级别 [link](https://mp.weixin.qq.com/s/ENQZii1xgxlsIbR-oMseKw)
 	* 分布式事务，两阶段提交
 	* 当MySQL单表记录数过大时，数据库的CRUD性能会明显下降，一些常见的优化措施 [link](https://mp.weixin.qq.com/s/ENQZii1xgxlsIbR-oMseKw)
-	* SQL 优化的常见方法有哪些
+	* SQL 优化的常见方法有哪些 [link](https://github.com/aalansehaiyang/technology-talk/blob/master/data-base/sql-optimize.md)
 	* 如何查看执行计划，如何根据执行计划进行SQL优化 [link](https://blog.csdn.net/taojin12/article/details/81489234)
-	* 数据库主备搭建
+	* MyISAM与InnoDB区别 [link](https://www.cnblogs.com/lyl2016/p/5797519.html)
 
 
 * redis
-	* 为什么要用Redis，Redis有哪些优缺点？Redis如何实现扩容？
+	* 为什么要用Redis，Redis有哪些优缺点？Redis如何实现扩容？ [link](https://mp.weixin.qq.com/s/FqMScRBFwdwF2n3QJkNLRA)
 	* 10个redis常见问题 [link](https://mp.weixin.qq.com/s/Z4a8wbWvPDGFTkKJH0X9VQ)
 		* Redis有哪些数据结构？
 		* 使用过Redis分布式锁么，代码怎么写？
@@ -147,13 +150,18 @@
 * tomcat
 	* Tomcat 调优
 	* Servlet线程安全问题 [link](https://blog.csdn.net/i_will_try/article/details/62215633)
+	
+* 其它
+
+	* HttpClient 内部实现？ [link](https://www.jianshu.com/p/14c005e9287c)
+
 
 ### HTTP 协议
 
 * OSI模型分为哪几层？
 * TCP
 	* TCP 和 UDP 的区别？TCP 数据传输过程中怎么做到可靠的？
-	* TCP 三次握手、四次挥手过程
+	* TCP 三次握手、四次挥手过程 [link](https://github.com/aalansehaiyang/technology-talk/blob/master/web/tcp.md)
 	* TCP拥塞控制 [link](https://www.cnblogs.com/hupp/p/4856134.html)
 * http
 	* Cookie和Session的区别
@@ -161,7 +169,7 @@
 	* HTTP 301 、302有啥区别
 	* HTTP连接池实现原理
 	* Http怎么处理长连接
-
+*  谈谈对 Http 和 RPC 的理解？ [link](outline/4.md)
 
 ### OS系统
 
@@ -172,6 +180,8 @@
 	* 分段和分页
 	* 虚拟内存与主存
 	* Linux 库函数与系统调用的关系与区别 [link](https://www.cnblogs.com/liwei0526vip/p/8998751.html)
+	* 调度算法
+	* select 、poll和epoll
 * 进程和线程的区别 [link](https://mp.weixin.qq.com/s/xHOSVG5tGzj1RzpEutH_wg)
  
 
@@ -186,7 +196,7 @@
 
 ### 其它
 
-* 一致性Hash算法
+* 一致性Hash算法 [link](https://github.com/aalansehaiyang/technology-talk/blob/master/other/%E4%B8%80%E8%87%B4%E6%80%A7hash.md)
 * 看过哪些开源框架的源码
 * 消息中间件是如何实现的，技术难点有哪些
 * 工作案例。怎么提高研发效率。
@@ -198,7 +208,7 @@
 * hibernate 和 IBatis 的区别？
 * 抽象能力，乐高模式，怎么提高研发效率
 * 什么情况用接口，什么情况用消息
-* 加密与解密：MD5，SHA1、DES、AES、RSA、DSA
+* 加密与解密：MD5，SHA1、DES、AES、RSA、DSA [link](https://github.com/aalansehaiyang/sort-algorithm/blob/master/doc/encry.md)
 
 
 

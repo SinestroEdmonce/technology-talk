@@ -14,6 +14,18 @@
 * [异步调用Async](https://blog.csdn.net/v2sking/article/details/72795742)
 
 
+#### 接口扩展
+
+* [ApplicationListener](https://my.oschina.net/spinachgit/blog/1635218?nocache=1522203306031)
+* [ApplicationObjectSupport](https://blog.csdn.net/huangbo_embed/article/details/50342669)
+* [FactoryBean]()
+* [InitializingBean]()
+* 拦截器
+	* [HandlerInterceptor、WebMvcConfigurerAdapter](https://blog.csdn.net/qq_27905183/article/details/79079762)
+	* [ClientHttpRequestInterceptor、RestTemplate](https://www.jianshu.com/p/deb5e5efb724)
+* AOP
+	* [@Around增强处理简单示例](https://www.cnblogs.com/ssslinppp/p/5845659.html)
+
 ### 二、资料集
 
 * [Spring Boot 系列文章](http://www.ityouknow.com/spring-boot.html)
@@ -30,3 +42,4 @@
 
 * [Spring Boot 2.0正式发布，新特性解读](https://mp.weixin.qq.com/s/lsJU_XFmI3dPpkWndrsAuw)
 * [Spring Boot 2.0权威发布](https://mp.weixin.qq.com/s/aSzZYsYux9iRHJOcbpvSWg)
+* [Spring Boot 2.1.0 权威发布](https://mp.weixin.qq.com/s/7Fck8qYDZiYqsHE7qjbV1Q)
